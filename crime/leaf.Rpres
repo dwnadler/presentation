@@ -1,0 +1,35 @@
+Cars Data
+========================================================
+author: David Nadler
+date: March 22, 2021
+autosize: true
+
+Introduction
+========================================================
+
+The following was created in RStudio Presenter and published to Rpubs. 
+It takes the **mtcars** dataset and plots the following variables:
+
+- mpg (miles per gallon)
+- hp (horsepower)
+
+We should expect to see a negative correlation between the two variables since higher horsepower engines tend to have a lower fuel economy than lower horsepower engines.
+
+
+Slide With Code
+========================================================
+Here we display how RStudio Presenter is able to compile code into an output.
+As an example, we present the structure of this dataset.
+```{r}
+str(mtcars)
+```
+
+Slide With Plot
+========================================================
+We plotted the horsepower versus miles per gallon here and confirm the negative correlation.
+```{r, echo=FALSE}
+plot(mtcars$hp, mtcars$mpg, main="Horsepower vs Mile Per Gallon",  xlab="miles per gallon", ylab="horsepower")
+```
+
+Thank You
+=========
